@@ -1,0 +1,46 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    background-color: #9ec3fa; 
+} 
+.house { 
+    position: relative; 
+    width: 300px; 
+    height: 250px; 
+    background-color: rgb(252, 189, 189); 
+    display: grid; 
+    place-items: center; 
+} 
+.roof { 
+    position: absolute; 
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
+    border-bottom: 150px solid rgb(244, 36, 36);
+    top: 0;
+    transform: translate(0, -100%);
+    width: 0; 
+    height: 0; 
+    background-color: #ffffff00;
+    z-index: 1; 
+} 
+.window { 
+    position: absolute; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background-color: rgb(37, 228, 246); 
+} 
+.chimney { 
+    position: absolute; 
+    right: 25%;
+    bottom: 100%;
+    z-index: 0; 
+    width: 30px; 
+    height: 120px;
+    transform: translate(50%, 0);
+    background-color: rgb(253, 103, 103); 
+}
